@@ -1,0 +1,16 @@
+site_name: My Docs
+nav:
+  - Home: index.md
+  - System Design:
+      - Framework: system-design/framework.md
+
+watch:
+  - mkdocs.yml
+  - docs
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+  extra_css: 
+    - stylesheets/extra.css
