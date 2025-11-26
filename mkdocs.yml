@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: Synopsis
 nav:
   - Home: index.md
   - System Design:
@@ -12,5 +12,5 @@ theme:
   name: material
   palette:
     scheme: slate
-  extra_css: 
-    - stylesheets/extra.css
+extra_css:
+  - stylesheets/extra.css

@@ -1,3 +1,11 @@
-    body {
-      font-size: 2.1em; /* Adjust as needed */
-    }
+.md-typeset {
+  font-size: 1.2rem !important; /* Increase base font size for all content */
+}
+
+.md-typeset p {
+  font-size: 1.2rem !important; /* Larger paragraphs */
+}
+
+.md-typeset ol li, .md-typeset ul li {
+    margin-bottom: 2rem;
+}
