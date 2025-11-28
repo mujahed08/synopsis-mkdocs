@@ -3,6 +3,9 @@ nav:
   - Home: index.md
   - System Design:
       - Framework: system-design/framework.md
+  - Leetcode:
+      - Sliding Window: leetcode/sliding-window.md
+      - Fast & Slow Pointers: leetcode/fast_and_slow_pointers.md
 
 watch:
   - mkdocs.yml

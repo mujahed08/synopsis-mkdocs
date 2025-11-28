@@ -9,3 +9,12 @@
 .md-typeset ol li, .md-typeset ul li {
     margin-bottom: 2rem;
 }
+
+.scrollable-section {
+    max-height: 20rem; /* Adjust as needed */
+    overflow-y: auto;
+    padding-right: 2rem;
+    font-weight: 300;
+    letter-spacing: -.01em;
+    font-size: 0.7rem;
+}
