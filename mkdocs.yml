@@ -2,10 +2,16 @@ site_name: Synopsis
 nav:
   - Home: index.md
   - System Design:
-      - Framework: system-design/framework.md
+      - Interview Framework: system-design/interview_framework/index.md
+      - Deployment Strategies: system-design/deployment_strategies/index.md
+      - Secure API Access: system-design/secure_api_access/index.md
+      - Unique ID Generation: system-design/unique_id_generator/index.md
   - Leetcode:
       - Sliding Window: leetcode/sliding-window.md
       - Fast & Slow Pointers: leetcode/fast_and_slow_pointers.md
+      - Linked List In-place Reversal: leetcode/linked_list_in_place_reversal/index.md
+      - Monotonic Stack: leetcode/monotonic_stack/index.md
+      - Overlapping Intervals: leetcode/overlapping_intervals/index.md
 
 watch:
   - mkdocs.yml
@@ -15,5 +21,19 @@ theme:
   name: material
   palette:
     scheme: slate
+  features:
+    - content.code.copy
 extra_css:
   - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde

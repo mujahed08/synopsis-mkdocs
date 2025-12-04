@@ -18,3 +18,8 @@
     letter-spacing: -.01em;
     font-size: 0.7rem;
 }
+
+/* Make the font size in code blocks a little smaller */
+.md-typeset pre code {
+    font-size: 0.8rem; /* Adjust this value as needed (e.g., 0.75rem, 80%, smaller px value) */
+}

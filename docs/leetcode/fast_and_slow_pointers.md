@@ -53,15 +53,15 @@ class Solution {
         int slow = n;
         int fast = sumOfSquareOfDigits(n);
 
-        while(slow != fast) {
-            slow = sumOfSquareOfDigits(slow);
-            fast = sumOfSquareOfDigits(sumOfSquareOfDigits(fast));
+        while(fast != 1 && slow != fast) {
+            slow = getNextNumber(slow);
+            fast = getNextNumber(getNextNumber(fast));
         }
         
-        return slow == 1;
+        return fast == 1;
     }
 
-    public int sumOfSquareOfDigits(int n){
+    public int getNextNumber(int n){
         
         int sum = 0; 
         while(n > 0 ){
@@ -73,4 +73,33 @@ class Solution {
     }
 }
 
+```
+
+## Find the Duplicate Number
+
+[https://leetcode.com//find-the-duplicate-number](https://leetcode.com/problems/find-the-duplicate-number/description/)
+
+Medium
+
+```java
+class Solution {
+    public int findDuplicate(int[] nums) {
+        
+        int slow = nums[0];
+        int fast = nums[0];
+
+        do {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        } while(slow != fast);
+        
+        slow = nums[0];
+        while(slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+
+        return fast;
+    }
+}
 ```
